@@ -1,6 +1,6 @@
 # Neuro City 
 
-[Работа на GitHub Pages](https://apostaldante.github.io/mesto/)  
+[Работа на GitHub Pages](https://apostaldante.github.io/neuroCity2023/)  
 
 ## Тестовое задание для разработчиков FrontEnd (09.10.2022)  
 
