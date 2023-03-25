@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/null_style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>NeurCity</title>
+</head>
+
+<body class="page">
+  <header class="header">
+  </header>
+  <main class="content">
+    <section class="swiper">
+      <h2 class="swiper__title title">Слайдер для touch устройств</h2>
+      <div class="image-slider swiper-container">
+        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__slide swiper-slide">
+            <img class="image-slider__image" src="./img/гомер.jpg" alt="Картинка">
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <img class="image-slider__image" src="./img/26_2338_oboi_darksiders_ii_1920x1080.jpg" alt="Картинка">
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <img class="image-slider__image" src="./img/27_Darksiders_2_oboi_1920x1080.jpg" alt="Картинка">
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <img class="image-slider__image" src="./img/gandex.ru-9750_72325c62b3edb6798a692ccfde56f953.jpg"
+              alt="Картинка">
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <img class="image-slider__image" src="./img/FQlYDHgROOc.jpg" alt="Картинка">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="canvas">
+      <h2 class="canvas__title title">Геометрические фигуры canvas</h2>
+      <canvas class="canvas__figures" id="canvas__figures"></canvas>
+    </section>
+    <section class="video">
+      <h2 class="video__title title">Воспроизведение видеофайла </h2>
+      <video class="video__file">
+        <source src="./video/video720.webm" type="video/webm">
+        <source src="./video/video720.mp4" type="video/mp4">
+      </video>
+      <p class="video__text">Playback position: <span id="video__time"></span></p>
+    </section>
+    <section class="sockets">
+      <h2 class="sockets__title title">web sockets</h2>
+      <form class="sockets__form" name="publish" id="messageForm">
+        <input class="soket" type="text" name="name" id="name" />
+        <input class="soket" type="text" name="message" id="message" />
+        <input class="soket" type="submit" value="send" />
+      </form>
+      <div id="subscribe"></div>
+    </section>
+    <section class="block">
+      <h2 class="block__title title">Блоки</h2>
+      <div class="block__parent-js">
+        <div class="block__child-js">
+          <h3 class="block__subtitle">JS</h3>
+        </div>
+      </div>
+      <div class="block__parent-css">
+        <div class="block__child-css">
+          <h3 class="block__subtitle">CSS</h3>
+        </div>
+      </div>
+      <div class="block__parent-html"
+        style="width: 400px; height: 300px; border: 1px solid black;display: flex; flex-direction: column; align-items: center;  margin: 0 auto 10px;">
+        <div class="block__child-html"
+          style="position: relative; width: 200px; height: 150px; border: 1px solid black; margin: auto;">
+          <h3 class="block__subtitle">HTML</h3>
+        </div>
+      </div>
+    </section>
+    <section class="element">
+      <h2 class="element__title title">3 элемента</h2>
+      <button type="button" aria-label="click" class="element__buttom buttom">Нажми</button>
+      <div class="element__display">
+        <article class="element__article article__left">
+          <p class="element__text">Элемент 1</p>
+        </article>
+        <article class="element__article article__right">
+          <p class="element__text">Элемент 2</p>
+        </article>
+        <article class="element__article article__top">
+          <p class="element__text">Элемент 3 <br>дебаунс 2s</p>
+        </article>
+      </div>
+    </section>
+    <section class="squares">
+      <h2 class="squares__title title">Случайное количество (от 10 до 100 ) разноцветных
+        квадратиков</h2>
+      <nav class="squares__nav btnRow">
+        <button type="button" aria-label="craete" class="squares__btn-create buttom">квадратики</button>
+        <button type="button" aria-label="clear" class="squares__btn-clear buttom">очистить</button>
+      </nav>
+      <div class="squares__display">
+      </div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+  <script src="./js/canvas.js"></script>
+  <script src="./js/video.js"></script>
+  <script src="./js/squares.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
